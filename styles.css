@@ -1,45 +1,63 @@
-/* styles.css */
+/* Base font size */
 html {
-  font-size: 16px; /* Base font size, 1rem = 16px */
+  font-size: 16px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: #f8f9fa;
-  color: #3e3e3e;
+  background-image: url("black-orchid.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--pico-color);
   font-family: Arial, sans-serif;
-  font-size: 1rem; /* 16px */
-  max-width: 40em;
-  margin: 0 auto;
-  padding: 5px;
+  font-size: 1rem;
 }
 
-.main-header {
-  font-size: 3.5rem; /* 3.5 * 16px = 56px */
+.main-header h1 {
+  font-size: 3.5rem;
   font-weight: bold;
-  color: #000000;
-  margin: 2rem 0; /* 32px top and bottom */
+  margin: 2rem 0;
 }
 
 .sub-header {
-  font-size: 2.5rem; /* 1.5 * 16px = 24px */
-  color: #3e3e3e;
-  margin: 1rem 0; /* 16px top and bottom */
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-weight: 600;
 }
 
 .sub-header-text {
-  font-size: 1.5rem; /* 16px */
-  color: #3e3e3e;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  font-size: 1.25rem;
+  margin: 1em 0;
+  color: var(--pico-color);
 }
 
 a {
-  color: #e07a5f;
+  color: var(--pico-primary);
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+.log-entry {
+  margin-bottom: 3rem;
+}
+
+.log-date {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: var(--pico-muted-color);
+  margin-left: 0.5rem;
+}
+
+.narrow-text {
+  max-width: 80%;
 }
