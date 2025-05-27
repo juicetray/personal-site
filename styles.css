@@ -61,3 +61,19 @@ a:hover {
 .narrow-text {
   max-width: 80%;
 }
+
+.genie-img {
+  height: 1rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.pw-screenshot {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 1rem auto;
+}
+
