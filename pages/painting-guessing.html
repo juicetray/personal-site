@@ -7,7 +7,10 @@
     <title>Projects - Justice Anderson</title>
     <meta name="description" content="Projects by Justice Anderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -16,18 +19,68 @@
       <section class="projects">
         <h2 class="sub-header">Painting Guessing Game & Painting API</h2>
         <p class="sub-header-text">
-          I've always been interested in art, which spurned me to make this web
-          app. The whole gist behind it is quite simple: guess the names of the
-          famous paintings. You can receive hints in the forms of the artist's
-          name and the year it was made. Making it was quite fun since it was
-          something I actually cared about and hadn't seen many examples of
-          online. I also got the opportunity to make my own API, mainly because
-          the Chicago Museum of Art's API wasn't being very cooperative!
+          This project started as a simple interactive quiz where users guessed
+          the names of famous paintings. Hints included the artist's name and
+          the year the painting was made. It began with a static single-page
+          layout and no user accounts, using hard-coded quiz data and basic CSS
+          styling. I also created a custom API to serve painting data, as the
+          Chicago Museum of Art's API didn't meet my needs.
         </p>
         <p class="sub-header-text">
-          <a href="https://whopainted.com/" target="_blank" rel="noopener">Art Guessing Game</a>
+          Since then, I've significantly revamped the project to include:
+          <ul>
+            <li>Background textures for a more engaging visual experience.</li>
+            <li>Additional pages with consistent styling and improved navigation.</li>
+            <li>
+              A Node.js-based <strong>login and registration system</strong> that uses Supabase to securely manage user accounts, enabling features like future score tracking and leaderboard integration.
+            </li>
+            <li>Modularized CSS for easier maintenance and scalability.</li>
+          </ul>
         </p>
-        <p class="sub-header-text">Back to <a href="./projects.html">projects</a>.</p>
+        <p class="sub-header-text">
+          Planned features include:
+          <ul>
+            <li>Lightbulb hint icon to help users during the quiz.</li>
+            <li>Designing a custom logo for consistent branding.</li>
+            <li>Revamping the quiz section for better UI/UX.</li>
+            <li>Implementing a leaderboard and score tracking for competitiveness and engagement.</li>
+            <li>Expanding the painting library for a richer quiz experience.</li>
+            <li>Adding an information section explaining game rules, credits, and details about the API.</li>
+          </ul>
+        </p>
+        <p class="sub-header-text">
+          <strong>Landing Page Redesign:</strong>
+          <br />
+          Before:
+          <br />
+          <img
+            src="/assets/org-art-landing.png"
+            alt="Original Landing Page"
+            class="landing-screenshot"
+          />
+          <br />
+          After:
+          <br />
+          <img
+            src="/assets/new-landing.png"
+            alt="New Landing Page"
+            class="landing-screenshot"
+          />
+        </p>
+        <p class="sub-header-text">
+          This revamp highlights my dedication to iterative design, user
+          experience, and modern web development best practices. Integrating
+          Node.js with Supabase for authentication demonstrates my full-stack
+          development skills while ensuring secure and scalable user management.
+        </p>
+        <p class="sub-header-text">
+          <a href="https://whopainted.com/" target="_blank" rel="noopener"
+            >Art Guessing Game</a
+          >
+        </p>
+        <p class="sub-header-text">
+          Back to <a href="./projects.html">projects</a>.
+        </p>
       </section>
     </main>
     <script src="script.js" async defer></script>
